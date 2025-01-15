@@ -4,47 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    table, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      width: 500px; /* Solo se aplica a la tabla */
-      height: 50px; /* Solo se aplica a los td */
-    }
-
-    tr:nth-child(even)
-    td:nth-child(even),
-    tr:nth-child(odd)
-    td:nth-child(odd) {
-      background-color: #fece9e;
-    }
-
-    tr:nth-child(odd)
-    td:nth-child(even),
-    tr:nth-child(even)
-    td:nth-child(odd) {
-      background-color: #d18b47;
-    }
-  </style>
-
-  <script>
-    function showQueen(celda) {
-      if (window.getComputedStyle(celda).backgroundImage=='none') {
-        celda.style=`
-                  background-image: url(queen.png);
-                  background-repeat: no-repeat;
-                  background-position: center;`;
-      }
-      else {
-        celda.style=`
-                  background-image: none;`;
-      }
-    }
-      /*INTERPOLACION*/
-  </script>
+  <link rel="stylesheet" href="./static/styles.css">
+  <script src="./js/scripts.js"></script>
 </head>
 <body>
-  <table>
+  <table id="tablero">
     <tr>
       <td onclick="showQueen(this);"></td>
       <td onclick="showQueen(this);"></td>
@@ -127,4 +91,5 @@
     </tr>
   </table>
 </body>
+
 </html>
