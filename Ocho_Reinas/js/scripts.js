@@ -26,6 +26,10 @@ function changeColor(r, c) { /* Renglones Columnas*/
   for (let i = 0; i < 8; i++) { /* Let para variables locales (dentro de una funcion) */
     celda.rows[r].cells[i].style.backgroundColor="red";
     celda.rows[i].cells[c].style.backgroundColor="red";
+
+    if (r1 < 8 && c1 < 8) {
+      celda.rows[r1++].cells[c1++].style.backgroundColor="red";
+    }
   }
 }
 
