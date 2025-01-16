@@ -30,5 +30,5 @@ function changeColor(r, c) { /* Renglones Columnas*/
 }
 
 function clean() {
-  
+  document.querySelectorAll("td").forEach(td => td.style.backgroundColor="")
 }
