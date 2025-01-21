@@ -44,3 +44,25 @@ function changeColor(r, c) { /* Renglones Columnas*/
 function clean() {
   document.querySelectorAll("td").forEach(td => td.style.backgroundColor="")
 }
+
+function clearImage() {
+  document.querySelectorAll("td").forEach(td => td.style.backgroundImage="none");
+}
+
+function solution1() {
+  clearImage();
+  contador=8;
+  var celdas=document.getElementById("tablero");
+  var estilo=`
+              background-image: url(${queen});
+              background-repeat: no-repeat;
+              background-position: center;`;
+  celdas.rows[0].cells[3].style=estilo;
+  celdas.rows[1].cells[6].style=estilo;
+  celdas.rows[2].cells[2].style=estilo;
+  celdas.rows[3].cells[7].style=estilo;
+  celdas.rows[4].cells[1].style=estilo;
+  celdas.rows[5].cells[4].style=estilo;
+  celdas.rows[6].cells[0].style=estilo;
+  celdas.rows[7].cells[5].style=estilo;
+}
