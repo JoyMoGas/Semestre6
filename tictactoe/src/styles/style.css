@@ -16,19 +16,33 @@ tr {
     /*refiere al mismo objeto*/
 }
 
-tr:nth-child(1)::after {
+
+
+/*td:nth-child(1)::after {
     content: "";
-    /*Se necesita que este en cadena vacpia para que se visualize la linea */
-    position: absolute;
+    /*Se necesita que este en cadena vacpia para que se visualize la linea
+    position: relative;
     /*cambiar para que salga en absolte para que salga arrioba de los botones
-    /*esqina superior izquierda al qye se refiere */
-    top: 50%;
-    /*cambia en donde empieza la linea desde arriba para abajo */
-    right: 5px;
-    left: 0;
-    height: 5px;
-    background-color: indigo;
+    /*esqina superior izquierda al qye se refiere
+    top: -1px;
+    /*cambia en donde empieza la linea desde arriba para abajo
+    bottom: -1px;
+    left: 50%;
+    width: 5px;
+    background-color: #C45886;
     z-index: 1;
     pointer-events: none;
 
 }
+
+tr:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    left: 0;
+    height: 5px;
+    background-color: #C45886;
+    z-index: 1;
+    pointer-events: none;
+}*/
